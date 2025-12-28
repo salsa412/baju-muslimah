@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Wanita</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Fashion Wanita">
+      <h1>Fashion Wanita</h1>
+    </div>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#products">Koleksi</a></li>
+      <li><a href="#sosmed">Kontak</a></li>
+    </ul>
+  </nav>
+
+ <!-- HERO SECTION -->
+<section class="hero" id="beranda">
+  <div class="carousel">
+    <div class="slide active" style="background-image: url('banner1.jpeg');"></div>
+    <div class="slide" style="background-image: url('/images/banner2.jpg');"></div>
+    <div class="slide" style="background-image: url('/images/banner3.jpg');"></div>
+  </div>
+
+  <div class="hero-content">
+    <h2>✨ Koleksi Fashion Muslimah Terbaru ✨</h2>
+    <p>Tampil percaya diri dengan gaya elegan & modern.  
+    Temukan koleksi terbaik mulai dari dress, tunik, hingga hijab trendi.</p>
+    <button class="order-btn">Belanja Sekarang</button>
+  </div>
+</section>
+
+
+  <!-- PRODUK -->
+  <section class="products" id="products">
+    <h2>Koleksi Terbaru</h2>
+    <div class="product-list">
+
+      <div class="product">
+        <img src="produk1.jpeg" alt="Dress Aruna">
+        <h3>Dress Aruna</h3>
+        <p>Dress panjang dengan bahan satin premium, tampil anggun dan eksklusif.</p>
+        <span>Rp320.000</span>
+        <button class="add-to-cart" data-name="Dress Aruna" data-price="320000">Tambah</button>
+      </div>
+
+      <div class="product">
+        <img src="produk2.jpeg" alt="Tunik Safa">
+        <h3>Tunik Safa</h3>
+        <p>Tunik modern yang nyaman dan modis, cocok untuk kegiatan sehari-hari.</p>
+        <span>Rp210.000</span>
+        <button class="add-to-cart" data-name="Tunik Safa" data-price="210000">Tambah</button>
+      </div>
+
+      <div class="product">
+        <img src="produk3.jpeg" alt="Hijab Ayla">
+        <h3>Hijab Ayla</h3>
+        <p>Hijab premium dengan bahan lembut dan adem, banyak pilihan warna.</p>
+        <span>Rp85.000</span>
+        <button class="add-to-cart" data-name="Hijab Ayla" data-price="85000">Tambah</button>
+      </div>
+
+      <div class="product">
+        <img src="produk4.jpeg" alt="Set Casual Rania">
+        <h3>Set Casual Rania</h3>
+        <p>Perpaduan atasan dan celana nyaman dengan warna earth tone elegan.</p>
+        <span>Rp340.000</span>
+        <button class="add-to-cart" data-name="Set Casual Rania" data-price="340000">Tambah</button>
+      </div>
+
+      <div class="product">
+        <img src="produk5.jpeg" alt="Abaya Zhafira">
+        <h3>Abaya Zhafira</h3>
+        <p>Abaya elegan dengan detail renda halus dan bahan premium ringan.</p>
+        <span>Rp450.000</span>
+        <button class="add-to-cart" data-name="Abaya Zhafira" data-price="450000">Tambah</button>
+        </div>
+
+        <div class="product">
+        <img src="produk6.jpeg" alt="Outer Layla">
+        <h3>Outer Layla</h3>
+        <p>Outer casual yang cocok dipadukan dengan berbagai outfit muslimah.</p>
+        <span>Rp260.000</span>
+        <button class="add-to-cart" data-name="Outer Layla" data-price="260000">Tambah</button>
+        </div>
+
+        <div class="product">
+        <img src="produk7.jpeg" alt="Khimar Hana">
+        <h3>Khimar Hana</h3>
+        <p>Khimar instan dengan bahan adem dan ringan, tampilan syar’i tapi stylish.</p>
+        <span>Rp150.000</span>
+        <button class="add-to-cart" data-name="Khimar Hana" data-price="150000">Tambah</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="sosmed" id="sosmed">
+      <a href="https://wa.me/6289505746182" target="_blank" class="sosmed-link">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/halsa.official" target="_blank" class="sosmed-link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://tiktok.com/@halsa.id" target="_blank" class="sosmed-link">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="mailto:orders@halsa.co" class="sosmed-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+    <p>© 2025 Fashion Wanita | Elegan, Anggun, dan Modern</p>
+  </footer>
+
+  <!-- CART ICON -->
+  <div class="cart-icon" id="cart-icon">
+    🛍️<span id="cart-count">0</span>
+  </div>
+
+  <!-- CART MODAL -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Keranjang Belanja</h2>
+      <ul id="cart-items"></ul>
+      <p id="total"></p>
+      <button id="pay-btn">Checkout Sekarang</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
